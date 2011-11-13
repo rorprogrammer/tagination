@@ -1,0 +1,8 @@
+
+page.visual_effect(:fade, "resource_info", :duration => 0.4)
+page.delay 0.5 do
+  page.replace_html("resource_info", :partial => "preview")
+  page.delay 0.5 do
+     page.visual_effect(:appear, "resource_info", :duration => 0.4)
+  end
+end

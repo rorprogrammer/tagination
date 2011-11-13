@@ -1,0 +1,31 @@
+<div id="preview_content">
+	<div id="preview_resource">
+		<div id="preview_box">
+			<div class="preview_header">
+				<%= @preview_system.capitalize %>
+			</div>
+			<div class="table_preview">
+				<div class="tr_preview">
+					<div class="td_image">
+						<div id="resource_info">
+							<%= render :partial => 'preview', 
+  									   :locals =>{:media_type => @response_list.resources_lists[@preview_system].tagging_system.media_type}%>
+						</div>
+					</div>
+					<div class="td_pre">
+						<div class="preview_list">
+						<%= render :partial => 'preview_result_list', 
+						   		   :locals =>{:list => @response_list.resources_lists[@preview_system], 
+									          :system => @preview_system} %>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<%= link_to "Back_to_list", session[:list_page]%>
+		</div>
+	</div>
+	<%= javascript_tag %{ $$("p .test").each ( function(link) {
+									new Tooltip(link, {mouseFollow: false});}) } %>
+</div>

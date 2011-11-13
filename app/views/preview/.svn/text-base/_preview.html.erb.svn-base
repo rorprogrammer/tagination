@@ -1,0 +1,51 @@
+
+		<!-- Show the title of the preview resource -->
+		<div class="preview_title"><%= @resource.title %></div>	
+		<!-- Show the resource eg. vidoe or pic or webpage -->
+		<div id="image_holder">
+		<div class="four" align="center"><div class="three"><div class="two"><div class="one">
+			<div id="shadow_content">
+				<% if @preview_system == 'photo' %><%= image_tag(@resource.preview_thumb_url) %>
+				<% elsif @preview_system == 'video'%>
+					<object width="540" height="340">
+                        <param name="movie" value="<%= @resource.preview_thumb_url%>&hl=de&fs=1&rel=0&color1=0x2b405b&color2=0x6b8ab6"></param>
+						<param name="allowFullScreen" value="true"></param>
+						<param name="allowscriptaccess" value="always"></param>
+                        <embed src="<%= @resource.preview_thumb_url%>&hl=de&fs=1&rel=0&color1=0x2b405b&color2=0x6b8ab6" type="application/x-shockwave-flash" 
+						allowscriptaccess="always" allowfullscreen="true" width="540" height="340"></embed>
+					</object
+				<% else %>
+					<div id="border_bookmark">
+							<iframe src="<%= @resource.preview_thumb_url %>" name="Fensterlein" width="560" height="340"
+									marginheight="10" marginwidth="10" align="right">
+                                <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen</p>
+                            </iframe>							
+					</div>
+				<% end %>
+			</div>
+		</div></div></div></div>
+		</div>
+		<!-- Show the date tags and the discription -->
+		<div id="link">
+			<%=link_to_function "Date", visual_effect(:toggle_blind, 'preview_date', :duration => 0.3) %>
+		</div>
+		<div id="preview_date" class="preview_date" style="">
+			<%= content_tag(:div, @resource.upload_date, :id => "date")%>
+		</div>
+		<div id="link">
+			<%=link_to_function "Description", visual_effect(:toggle_blind, 'preview_description', :duration => 0.3) %>
+		</div>
+		</span>
+		<div id="preview_description" class="preview_description" style="">
+			<%= create_description(@resource.description)%>
+		</div>
+		<div id="link">
+			<%=link_to_function "Tags", visual_effect(:toggle_blind, 'preview_tags', :duration => 0.3) %>
+		</div>
+		<div id="preview_tags" class="preview_tags">
+			<%= create_tag_list(@resource.tags)%>
+		</div>
+		<div id="link_original">
+			<%= link_to "Original", @resource.link_url, :html => {:rel => "external", :target => "_new"}%>
+		</div>
+

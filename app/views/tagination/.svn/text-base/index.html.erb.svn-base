@@ -1,0 +1,28 @@
+<div id="index_content">
+	<div id="xsnazzy">
+		<b class="xtop_m">
+			<b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b><b class="xb5"></b>
+		</b>
+		<div class="main_box_content">
+			<p class="time"><%= @date%></p>
+			<div class="logo">
+			<!-- form for  the search field and the checkboxes -->
+			<% form_tag :controller => :search, :action => :search do%>
+				<%= text_field_tag :tags, nil, :size => 39 %>
+				<%= submit_tag "",:class => "form_submit", :onclick => visual_effect(:show, 'start_notice')%>
+				<br /><br />
+				<% @available_systems.each do |type| %>
+					<%= check_box_tag(type, type, :checked => true )%>
+					<%= type.capitalize.pluralize %>
+				<% end %>
+			<% end %>
+			</div>
+		</div>
+		<b class="xbottom_m">
+			<b class="xb5"></b><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b>
+		</b>
+		<% if flash[:error] %>	
+			<div id="start_notice"><%= flash[:error]%></div>
+		<% end %>
+	</div>
+</div>

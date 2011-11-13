@@ -1,0 +1,34 @@
+<div id="preview_res_table">
+	<div class="tr_image_<%=media_type%>">
+		<div class="td_res">
+			<div id="border_one">
+					<div id="border_two">
+						<div id="border_three">
+							<div id="border_four">
+								<p class="img">
+								<%= link_to_remote image_tag(preview_resource.list_thumb_url),
+										:url => { :action => "ajax_show_resource", 
+												  :preview_system => @preview_system,
+												  :resource_id => preview_resource.resource_id,
+												  :title => preview_resource.title,
+												  :upload_date => preview_resource.upload_date,
+												  :tags => preview_resource.tags,
+												  :description => preview_resource.description,
+												  :preview_thumb_url => preview_resource.preview_thumb_url,
+												  :link_url => preview_resource.link_url
+													},  		
+								:html =>{:href => preview_path(:id => preview_resource.resource_id, 
+										:preview_system => @preview_system, 
+										:tags => @tags.join('+'), 
+										:page => @request_params[@preview_system][:page],
+										:per_page => @request_params[@preview_system][:per_page], 
+										:sort_by => @request_params[@preview_system][:sort_by])}%>
+					    		</p>		
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>	
+</div>
+

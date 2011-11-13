@@ -1,0 +1,26 @@
+<div class="four_list"><div class="three"><div class="two"><div class="one">
+		<!-- list header tab-->
+		<div id="<%=list.tagging_system.media_type%>_list_header" class="list_header"> 
+			<%= render :partial => "list_header", :object => list%>
+		</div>
+		<!-- list navigation according to each system -->
+		<div id="<%=list.tagging_system.media_type%>_list_nav" class="list_navigation">
+			<%= render :partial => "list_navigation", :object => list, 
+					   :locals => {:system => system,
+								   :sort_by => "relevance"}  %>
+		</div>
+		<!-- resources list  -->
+		<div id="<%=list.tagging_system.media_type%>_table">
+			<div id="<%=list.tagging_system.media_type%>_table_row" class="table_row">
+			<div id="<%=list.tagging_system.media_type%>_replace">
+				<%= render :partial => 'resource', :collection => list.resources, 
+						   :locals =>{:system => list.tagging_system.nick, 
+								   	  :media_type => list.tagging_system.media_type,
+									  :page => list.actual_page} %>		
+
+				<%= javascript_tag %{ $$("p .test").each ( function(link) {
+									new Tooltip(link, {mouseFollow: false});}) } %>
+			</div>
+			</div>	
+		</div>		
+</div></div></div></div>

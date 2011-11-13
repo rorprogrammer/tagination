@@ -1,0 +1,15 @@
+<div id="search_content">
+ 	<div id="tab">
+ 		<%= render :partial => 'tabs' %>
+ 	</div>
+ 	<div id="result_lists">
+ 		<% @systems_to_search.each do |system| %>
+			<div id="<%= system%>_list" align="center">
+ 			<%= render :partial => "result_list", 
+				  	   :locals => {:system => system,
+							       :list => @response_list.resources_lists[system]} %>
+	   		</div>
+		<% end%>
+ 	</div>
+</div>
+

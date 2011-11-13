@@ -1,0 +1,20 @@
+<div class="four_list"><div class="three"><div class="two"><div class="one">
+		<!-- list navigation according to each system -->
+		<div id="<%=list.tagging_system.media_type%>_list_nav" class="list_navigation">
+			<%= render :partial => "list_navigation", :object => list, 
+					   :locals => {:system => @preview_system,
+								   :sort_by => @request_params[system][:sort_by].to_s}  %>
+		</div>
+		<!-- resources list  -->
+		<div id="<%=list.tagging_system.media_type%>_table">
+			<div id="<%=list.tagging_system.media_type%>_table_row" class="preview_table_row">
+			<div id="<%=list.tagging_system.media_type%>_replace">
+				<%= render :partial => 'preview_resource', :collection => list.resources, 
+						   :locals =>{:system => list.tagging_system.nick, 
+								   	  :media_type => list.tagging_system.media_type,
+									  :page => list.actual_page,
+									  :count => 0} %>
+			</div>
+			</div>	
+		</div>		
+</div></div></div></div>

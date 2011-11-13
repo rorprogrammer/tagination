@@ -1,0 +1,28 @@
+list = @response_list.resources_lists[@paginate_system]
+if(@paginate_system == 'flickr' || @paginate_system == 'smugmug')
+  media_type= 'photo'
+end
+if(@paginate_system == 'youtube' || @paginate_system == 'myvideo') 
+  media_type ="video" 
+end
+if(@paginate_system == 'bibsonomy'|| @paginate_system == 'delicious')
+  media_type ="bookmark"
+end
+page.visual_effect(:fade, "#{media_type}_replace", :duration => 0.4)
+page.delay 0.5 do
+  page.replace_html("#{media_type}_link_replace", 
+                    :partial => "tab_links", :locals=> {:list => list})
+  page.replace_html("#{media_type}_replace", 
+                  :partial => "resource", :collection => list.resources,
+                  :locals => {:system => @paginate_system,
+                              :media_type => media_type})
+  page.replace_html("#{media_type}_list_nav",
+                  :partial => "list_navigation", :object => list,
+                  :locals => {:system => @paginate_system,
+                              :sort_by => @sort_by})
+  page.insert_html :bottom,  "#{media_type}_replace", javascript_tag(%{ $$(\"p .test\").each ( function(link) {
+                  new Tooltip(link, {mouseFollow: false});}) })
+  page.delay 0.5 do
+    page.visual_effect(:appear, "#{media_type}_replace", :duration => 0.4, :queue =>"end")
+  end
+end

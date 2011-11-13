@@ -1,0 +1,24 @@
+list = @response_list.resources_lists[@preview_system]
+page.visual_effect(:fade, "#{@preview_system}_replace", :duration => 0.3)
+page.delay 0.5 do
+  page.replace_html("#{@preview_system}_replace", 
+                  :partial => "preview_resource", :collection => list.resources,
+                  :locals => {:system => @preview_system,
+                              :media_type => @preview_system})
+  page.replace_html("#{@preview_system}_list_nav",
+                  :partial => "list_navigation", :object => list,
+                  :locals => {:system => @preview_system,
+                              :sort_by => @request_params[@preview_system][:sort_by].to_s})
+  page.delay 0.5 do
+    page.visual_effect(:appear, "#{@preview_system}_replace", :duration => 0.4, :queue =>"end")
+  end
+  
+  page.visual_effect(:fade, "resource_info", :duration => 0.4)
+  
+  page.delay 0.5 do
+    page.replace_html("resource_info", :partial => "preview")
+    page.delay 0.5 do
+      page.visual_effect(:appear, "resource_info", :duration => 0.4)
+    end
+  end
+end

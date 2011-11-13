@@ -1,0 +1,1235 @@
+
+
+Processing TaginationController#index (for 84.63.39.217 at 2009-05-25 22:40:33) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 22:41:04) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/apple/systems/photo+video+bookmark
+Completed in 4ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:41:04) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1539ms (View: 147, DB: 0) | 200 OK [http://84.63.39.217/search/tags/apple/systems/photo+video+bookmark]
+
+
+Processing TaginationController#index (for 89.13.17.77 at 2009-05-25 22:42:08) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing TaginationController#index (for 84.63.39.217 at 2009-05-25 22:42:28) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:43:06) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"joomla", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/joomla/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:43:06) [GET]
+  Parameters: {"tags"=>"joomla", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1074ms (View: 331, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 22:43:07) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/flower/systems/photo+video+bookmark
+Completed in 2ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:43:07) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1008ms (View: 152, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:44:27) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1043ms (View: 199, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 22:44:40) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"rails", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/rails/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:44:40) [GET]
+  Parameters: {"tags"=>"rails", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1146ms (View: 295, DB: 0) | 200 OK [http://84.63.39.217/search/tags/rails/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 22:46:19) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/joomla/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:46:19) [GET]
+  Parameters: {"tags"=>"joomla", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1045ms (View: 157, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:46:41) [GET]
+  Parameters: {"tags"=>"joomla", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 857ms (View: 135, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:47:00) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"joomla", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/joomla/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:47:00) [GET]
+  Parameters: {"tags"=>"joomla", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 904ms (View: 128, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:47:12) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"ror", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/ror/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:47:12) [GET]
+  Parameters: {"tags"=>"ror", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1128ms (View: 263, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror/systems/photo+video+bookmark]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:47:20) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 3883ms (View: 61, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:47:35) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla", "page"=>"3", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 796ms (View: 50, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla/system/photo+video+bookmark/sort_by/relevance/page/3?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:47:42) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla", "page"=>"4", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 693ms (View: 51, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla/system/photo+video+bookmark/sort_by/relevance/page/4?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:47:43) [GET]
+  Parameters: {"tags"=>"ror", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1184ms (View: 452, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror/systems/photo+video+bookmark]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:47:53) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla", "page"=>"5", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 749ms (View: 56, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla/system/photo+video+bookmark/sort_by/relevance/page/5?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:47:59) [GET]
+  Parameters: {"tags"=>"ror+programming", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 904ms (View: 90, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror+programming/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:48:09) [GET]
+  Parameters: {"tags"=>"joomla+seo", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1078ms (View: 136, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla+seo/systems/photo+video+bookmark]
+
+
+Processing SearchController#paginate_search (for 89.13.17.77 at 2009-05-25 22:48:14) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"ror+programming", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 190ms (View: 45, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/ror+programming/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:48:14) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla+seo", "page"=>"6", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 877ms (View: 182, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla+seo/system/photo+video+bookmark/sort_by/relevance/page/6?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:48:17) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla+seo", "page"=>"7", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 921ms (View: 57, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla+seo/system/photo+video+bookmark/sort_by/relevance/page/7?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:48:22) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla+seo", "page"=>"8", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 687ms (View: 56, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla+seo/system/photo+video+bookmark/sort_by/relevance/page/8?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:48:27) [POST]
+  Parameters: {"paginate_system"=>"video", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla+seo", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 569ms (View: 53, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla+seo/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=video&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:48:32) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla+seo", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 351ms (View: 208, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla+seo/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:48:36) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla+seo", "page"=>"1", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 218ms (View: 63, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla+seo/system/photo+video+bookmark/sort_by/relevance/page/1?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 22:48:41) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla+seo", "page"=>"4", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 875ms (View: 57, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/joomla+seo/system/photo+video+bookmark/sort_by/relevance/page/4?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:48:47) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"ror", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/ror/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:48:47) [GET]
+  Parameters: {"tags"=>"ror", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 854ms (View: 246, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:48:56) [GET]
+  Parameters: {"tags"=>"joomla+seo", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 779ms (View: 132, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla+seo/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:48:59) [GET]
+  Parameters: {"tags"=>"ror+crashing", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 721ms (View: 141, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror+crashing/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:49:08) [GET]
+  Parameters: {"tags"=>"joomla ", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1074ms (View: 125, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla%20/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:49:47) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"ror", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/ror/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:49:47) [GET]
+  Parameters: {"tags"=>"ror", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1063ms (View: 140, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:50:17) [GET]
+  Parameters: {"tags"=>"ror+rails", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1035ms (View: 302, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror+rails/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:50:35) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"rails", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/rails/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:50:35) [GET]
+  Parameters: {"tags"=>"rails", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 935ms (View: 113, DB: 0) | 200 OK [http://84.63.39.217/search/tags/rails/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:51:10) [GET]
+  Parameters: {"tags"=>"joomla+videos", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 955ms (View: 87, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla+videos/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:51:15) [GET]
+  Parameters: {"tags"=>"joomla+videos+tutorial", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 888ms (View: 77, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla+videos+tutorial/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:51:32) [GET]
+  Parameters: {"tags"=>"joomla+videos ", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 905ms (View: 90, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla+videos%20/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:51:35) [GET]
+  Parameters: {"tags"=>"joomla ", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 960ms (View: 153, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla%20/systems/photo+video+bookmark]
+
+
+Processing SearchController#list_photo (for 89.13.17.77 at 2009-05-25 22:51:36) [GET]
+  Parameters: {"tags"=>"rails", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list_system
+Completed in 1877ms (View: 88, DB: 0) | 200 OK [http://84.63.39.217/search/list_photo?systems_to_search=photo&tags=rails]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 22:51:47) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"joomla", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/joomla/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:51:47) [GET]
+  Parameters: {"tags"=>"joomla", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 932ms (View: 277, DB: 0) | 200 OK [http://84.63.39.217/search/tags/joomla/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:51:50) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"ror"}
+Redirected to http://84.63.39.217:3000/search/tags/ror/systems/photo
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:51:50) [GET]
+  Parameters: {"tags"=>"ror", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 689ms (View: 66, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror/systems/photo]
+
+
+Processing SearchController#list_photo (for 84.63.39.217 at 2009-05-25 22:51:56) [GET]
+  Parameters: {"tags"=>"joomla", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list_system
+Completed in 855ms (View: 77, DB: 0) | 200 OK [http://84.63.39.217/search/list_photo?systems_to_search=photo&tags=joomla]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:52:00) [GET]
+  Parameters: {"tags"=>"ror+rubyonrails", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 848ms (View: 49, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror+rubyonrails/systems/photo]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 22:52:05) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple"}
+Redirected to http://84.63.39.217:3000/search/tags/apple/systems/photo
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:52:05) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 801ms (View: 53, DB: 0) | 200 OK [http://84.63.39.217/search/tags/apple/systems/photo]
+
+
+Processing SearchController#list_photo (for 84.63.39.217 at 2009-05-25 22:52:09) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list_system
+Completed in 3214ms (View: 103, DB: 0) | 200 OK [http://84.63.39.217/search/list_photo?systems_to_search=photo&tags=apple]
+
+
+Processing TaginationController#index (for 89.13.17.77 at 2009-05-25 22:53:15) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:53:28) [POST]
+  Parameters: {"photo"=>"photo", "bookmark"=>"bookmark", "authenticity_token"=>"UMvqUEK1PlfIQ4k1kcdyyyp7PVUvtSLBHycTBGJjCx8=", "tags"=>"ror", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/ror/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:53:28) [GET]
+  Parameters: {"tags"=>"ror", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1048ms (View: 240, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:53:39) [GET]
+  Parameters: {"tags"=>"ror+rails", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 765ms (View: 112, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror+rails/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:53:43) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+
+ActionView::TemplateError (undefined method `tagging_system' for nil:NilClass) on line #3 of app/views/search/_result_list.html.erb:
+1: <div class="four_list"><div class="three"><div class="two"><div class="one">
+2: 		<!-- list header tab-->
+3: 		<div id="<%=list.tagging_system.media_type%>_list_header" class="list_header"> 
+4: 			<%= render :partial => "list_header", :object => list%>
+5: 		</div>
+6: 		<!-- list navigation according to each system -->
+
+    app/views/search/_result_list.html.erb:3
+    app/views/search/list.html.erb:10
+    app/views/search/list.html.erb:6:in `each'
+    app/views/search/list.html.erb:6
+    -e:2:in `load'
+    -e:2
+
+Rendering /home/eugen/Aptana Studio/tagination/public/500.html (500 Internal Server Error)
+
+
+Processing TaginationController#index (for 84.63.39.217 at 2009-05-25 22:53:53) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 22:54:00) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/flower/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:54:00) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1115ms (View: 140, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:54:22) [GET]
+  Parameters: {"tags"=>"ror+rubyonrails", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+
+ActionView::TemplateError (undefined method `tagging_system' for nil:NilClass) on line #3 of app/views/search/_result_list.html.erb:
+1: <div class="four_list"><div class="three"><div class="two"><div class="one">
+2: 		<!-- list header tab-->
+3: 		<div id="<%=list.tagging_system.media_type%>_list_header" class="list_header"> 
+4: 			<%= render :partial => "list_header", :object => list%>
+5: 		</div>
+6: 		<!-- list navigation according to each system -->
+
+    app/views/search/_result_list.html.erb:3
+    app/views/search/list.html.erb:10
+    app/views/search/list.html.erb:6:in `each'
+    app/views/search/list.html.erb:6
+    -e:2:in `load'
+    -e:2
+
+Rendering /home/eugen/Aptana Studio/tagination/public/500.html (500 Internal Server Error)
+
+
+Processing TaginationController#index (for 89.13.17.77 at 2009-05-25 22:54:34) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:54:41) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"ror", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/ror/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:54:41) [GET]
+  Parameters: {"tags"=>"ror", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 743ms (View: 106, DB: 0) | 200 OK [http://84.63.39.217/search/tags/ror/systems/photo+video+bookmark]
+
+
+Processing SearchController#list_photo (for 89.13.17.77 at 2009-05-25 22:54:54) [GET]
+  Parameters: {"tags"=>"ror", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list_system
+Completed in 2536ms (View: 295, DB: 0) | 200 OK [http://84.63.39.217/search/list_photo?systems_to_search=photo&tags=ror]
+
+
+Processing SearchController#list_photo (for 84.63.39.217 at 2009-05-25 22:54:56) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list_system
+Completed in 2647ms (View: 104, DB: 0) | 200 OK [http://84.63.39.217/search/list_photo?systems_to_search=photo&tags=flower]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:55:01) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1123ms (View: 297, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing PreviewController#show (for 84.63.39.217 at 2009-05-25 22:55:11) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"flower", "id"=>"2923063640", "page"=>"1", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 2192ms (View: 71, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/2923063640/search/tags/flower/sort/relevance/page/1/per_page/8]
+
+
+Processing PreviewController#show (for 84.63.39.217 at 2009-05-25 22:55:19) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"flower", "id"=>"3469128950", "page"=>"1", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 1998ms (View: 61, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/3469128950/search/tags/flower/sort/relevance/page/1/per_page/8]
+
+
+Processing SearchController#list_photo (for 89.13.17.77 at 2009-05-25 22:55:21) [GET]
+  Parameters: {"tags"=>"ror+sel", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list_system
+Completed in 1401ms (View: 31, DB: 0) | 200 OK [http://84.63.39.217/search/list_photo?systems_to_search=photo&tags=ror%2Bsel]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:55:33) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"photo"}
+Redirected to http://84.63.39.217:3000/search/tags/photo/systems/photo
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:55:33) [GET]
+  Parameters: {"tags"=>"photo", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 891ms (View: 49, DB: 0) | 200 OK [http://84.63.39.217/search/tags/photo/systems/photo]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:55:41) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1010ms (View: 163, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:56:58) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto"}
+Redirected to http://84.63.39.217:3000/search/tags/foto/systems/photo
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:56:58) [GET]
+  Parameters: {"tags"=>"foto", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 920ms (View: 50, DB: 0) | 200 OK [http://84.63.39.217/search/tags/foto/systems/photo]
+
+
+Processing TaginationController#index (for 89.13.17.77 at 2009-05-25 22:57:13) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 22:57:17) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/foto/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:57:17) [GET]
+  Parameters: {"tags"=>"foto", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1285ms (View: 176, DB: 0) | 200 OK [http://84.63.39.217/search/tags/foto/systems/photo+video+bookmark]
+
+
+Processing PreviewController#show (for 84.63.39.217 at 2009-05-25 22:57:20) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"flower", "id"=>"3469128950", "page"=>"1", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 2342ms (View: 53, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/3469128950/search/tags/flower/sort/relevance/page/1/per_page/8]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:57:25) [GET]
+  Parameters: {"tags"=>"foto", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 916ms (View: 127, DB: 0) | 200 OK [http://84.63.39.217/search/tags/foto/systems/photo+video+bookmark]
+
+
+Processing PreviewController#paginate_preview (for 84.63.39.217 at 2009-05-25 22:57:28) [POST]
+  Parameters: {"sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "id"=>"0", "page"=>"2", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering preview/paginate_preview
+Completed in 1830ms (View: 35, DB: 0) | 200 OK [http://84.63.39.217/paginate_preview/tags/flower/system/photo/0/2/8/relevance]
+
+
+Processing PreviewController#paginate_preview (for 84.63.39.217 at 2009-05-25 22:57:33) [POST]
+  Parameters: {"sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "id"=>"0", "page"=>"1", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering preview/paginate_preview
+Completed in 1941ms (View: 38, DB: 0) | 200 OK [http://84.63.39.217/paginate_preview/tags/flower/system/photo/0/1/8/relevance]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:58:23) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 881ms (View: 140, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing PreviewController#show (for 89.13.17.77 at 2009-05-25 22:58:24) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"foto", "id"=>"2127230456", "page"=>"1", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 1803ms (View: 78, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/2127230456/search/tags/foto/sort/relevance/page/1/per_page/8]
+
+
+Processing PreviewController#ajax_show_resource (for 89.13.17.77 at 2009-05-25 22:58:54) [POST]
+  Parameters: {"title"=>"Doppia identità...", "resource_id"=>"3562431766", "upload_date"=>"25. May 2009", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>["gg", "foto", "shiningstar", "aphoto", "photographia", "contactgroup", "aplusphoto", "heartawards", "italianflickrworld", "favoritesofmyfavorites", "nonstiamoapettinarelebambole", "artedellafoto", "macomeriesci", "lamiciziafaladifferenza"], "preview_system"=>"photo"}
+Rendering preview/ajax_show_resource
+Completed in 786ms (View: 3, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?preview_system=photo&resource_id=3562431766&tags%5B%5D=gg&tags%5B%5D=foto&tags%5B%5D=shiningstar&tags%5B%5D=aphoto&tags%5B%5D=photographia&tags%5B%5D=contactgroup&tags%5B%5D=aplusphoto&tags%5B%5D=heartawards&tags%5B%5D=italianflickrworld&tags%5B%5D=favoritesofmyfavorites&tags%5B%5D=nonstiamoapettinarelebambole&tags%5B%5D=artedellafoto&tags%5B%5D=macomeriesci&tags%5B%5D=lamiciziafaladifferenza&title=Doppia+identit%C3%A0...&upload_date=25.+May+2009]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 22:59:06) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/apple/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 22:59:06) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1114ms (View: 331, DB: 0) | 200 OK [http://84.63.39.217/search/tags/apple/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 22:59:13) [GET]
+  Parameters: {"tags"=>"foto", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1069ms (View: 254, DB: 0) | 200 OK [http://84.63.39.217/search/tags/foto/systems/photo+video+bookmark]
+
+
+Processing PreviewController#show (for 84.63.39.217 at 2009-05-25 22:59:15) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"apple", "id"=>"2110378080", "page"=>"1", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 1765ms (View: 40, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/2110378080/search/tags/apple/sort/relevance/page/1/per_page/8]
+
+
+Processing PreviewController#show (for 89.13.17.77 at 2009-05-25 22:59:22) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"foto", "id"=>"1492148910", "page"=>"1", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 1856ms (View: 39, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/1492148910/search/tags/foto/sort/relevance/page/1/per_page/8]
+
+
+Processing PreviewController#ajax_show_resource (for 84.63.39.217 at 2009-05-25 22:59:30) [POST]
+  Parameters: {"title"=>"My office today. (What is what ?) - 2009", "resource_id"=>"3210944504", "upload_date"=>"19. January 2009", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>["life", "desktop", "leica", "color", "ikea", "apple", "canon", "bag", "book", "louis", "office", "dvd", "dispenser", "girlfriend", "remember", "phone", "graphic", "diesel", "pentax", "bureau", "mosaic", "watch", "sac", "picture", "spoon", "powershot", "ixus", "souvenir", "speaker", "remote", "creature", "rag", "wacom", "livre", "couleur", "vuitton", "jbl", "headphone", "3m", "vie", "dlux", "notepad", "louisvuitton", "lightroom", "vestax", "freebox", "alu", "sennheiser", "montre", "rouleau", "aficionados", "graphique", "handcream", "razer", "1650", "telecommande", "drogue", "sctoch", "macbook", "k10d", "iqua", "unibody", "guesscollection", "ecouteur", "vci300", "datawriter", "devidoire"], "preview_system"=>"photo"}
+Rendering preview/ajax_show_resource
+Completed in 1242ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?preview_system=photo&resource_id=3210944504&tags%5B%5D=life&tags%5B%5D=desktop&tags%5B%5D=leica&tags%5B%5D=color&tags%5B%5D=ikea&tags%5B%5D=apple&tags%5B%5D=canon&tags%5B%5D=bag&tags%5B%5D=book&tags%5B%5D=louis&tags%5B%5D=office&tags%5B%5D=dvd&tags%5B%5D=dispenser&tags%5B%5D=girlfriend&tags%5B%5D=remember&tags%5B%5D=phone&tags%5B%5D=graphic&tags%5B%5D=diesel&tags%5B%5D=pentax&tags%5B%5D=bureau&tags%5B%5D=mosaic&tags%5B%5D=watch&tags%5B%5D=sac&tags%5B%5D=picture&tags%5B%5D=spoon&tags%5B%5D=powershot&tags%5B%5D=ixus&tags%5B%5D=souvenir&tags%5B%5D=speaker&tags%5B%5D=remote&tags%5B%5D=creature&tags%5B%5D=rag&tags%5B%5D=wacom&tags%5B%5D=livre&tags%5B%5D=couleur&tags%5B%5D=vuitton&tags%5B%5D=jbl&tags%5B%5D=headphone&tags%5B%5D=3m&tags%5B%5D=vie&tags%5B%5D=dlux&tags%5B%5D=notepad&tags%5B%5D=louisvuitton&tags%5B%5D=lightroom&tags%5B%5D=vestax&tags%5B%5D=freebox&tags%5B%5D=alu&tags%5B%5D=sennheiser&tags%5B%5D=montre&tags%5B%5D=rouleau&tags%5B%5D=aficionados&tags%5B%5D=graphique&tags%5B%5D=handcream&tags%5B%5D=razer&tags%5B%5D=1650&tags%5B%5D=telecommande&tags%5B%5D=drogue&tags%5B%5D=sctoch&tags%5B%5D=macbook&tags%5B%5D=k10d&tags%5B%5D=iqua&tags%5B%5D=unibody&tags%5B%5D=guesscollection&tags%5B%5D=ecouteur&tags%5B%5D=vci300&tags%5B%5D=datawriter&tags%5B%5D=devidoire&title=My+office+today.+%28What+is+what+%3F%29+-+2009&upload_date=19.+January+2009]
+
+
+Processing PreviewController#ajax_show_resource (for 84.63.39.217 at 2009-05-25 22:59:41) [POST]
+  Parameters: {"title"=>"inspiration... (from iPhone)", "resource_id"=>"2110378080", "upload_date"=>"14. December 2007", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>["trip", "family", "blue", "sunset", "red", "party", "vacation", "sky", "people", "music", "art", "apple", "nature", "colors", "friend", "december", "contest", "palm", "maldives", "iphone", "bostoncom", "frhwofavs", "sharaff", "lifetravel"], "preview_system"=>"photo"}
+Rendering preview/ajax_show_resource
+Completed in 932ms (View: 5, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?preview_system=photo&resource_id=2110378080&tags%5B%5D=trip&tags%5B%5D=family&tags%5B%5D=blue&tags%5B%5D=sunset&tags%5B%5D=red&tags%5B%5D=party&tags%5B%5D=vacation&tags%5B%5D=sky&tags%5B%5D=people&tags%5B%5D=music&tags%5B%5D=art&tags%5B%5D=apple&tags%5B%5D=nature&tags%5B%5D=colors&tags%5B%5D=friend&tags%5B%5D=december&tags%5B%5D=contest&tags%5B%5D=palm&tags%5B%5D=maldives&tags%5B%5D=iphone&tags%5B%5D=bostoncom&tags%5B%5D=frhwofavs&tags%5B%5D=sharaff&tags%5B%5D=lifetravel&title=inspiration...+%28from+iPhone%29&upload_date=14.+December+2007]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 23:00:15) [GET]
+  Parameters: {"tags"=>"foto", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1679ms (View: 124, DB: 0) | 200 OK [http://84.63.39.217/search/tags/foto/systems/photo+video+bookmark]
+
+
+Processing PreviewController#paginate_preview (for 84.63.39.217 at 2009-05-25 23:00:19) [POST]
+  Parameters: {"sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "id"=>"0", "page"=>"2", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering preview/paginate_preview
+Completed in 1992ms (View: 41, DB: 0) | 200 OK [http://84.63.39.217/paginate_preview/tags/apple/system/photo/0/2/8/relevance]
+
+
+Processing SearchController#paginate_search (for 89.13.17.77 at 2009-05-25 23:00:22) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 357ms (View: 119, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/foto/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 89.13.17.77 at 2009-05-25 23:00:27) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto", "page"=>"3", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 185ms (View: 42, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/foto/system/photo+video+bookmark/sort_by/relevance/page/3?paginate_system=bookmark&per_page=8]
+
+
+Processing PreviewController#paginate_preview (for 84.63.39.217 at 2009-05-25 23:00:28) [POST]
+  Parameters: {"sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "id"=>"0", "page"=>"3", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering preview/paginate_preview
+Completed in 1440ms (View: 33, DB: 0) | 200 OK [http://84.63.39.217/paginate_preview/tags/apple/system/photo/0/3/8/relevance]
+
+
+Processing SearchController#paginate_search (for 89.13.17.77 at 2009-05-25 23:00:33) [POST]
+  Parameters: {"paginate_system"=>"video", "sort_by"=>"relevance", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 667ms (View: 188, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/foto/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=video&per_page=8]
+
+
+Processing PreviewController#ajax_show_resource (for 84.63.39.217 at 2009-05-25 23:00:33) [POST]
+  Parameters: {"title"=>"In blue", "resource_id"=>"2216684652", "upload_date"=>"24. January 2008", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>["camera", "blue", "winter", "sky", "stilllife", "cloud", "white", "macro", "cute", "art", "love", "home", "apple", "canon", "logo", "photo", "amazing", "nice", "mac", "flickr", "day", "ipod", "image", "artistic", "time", "cloudy", "weekend", "picture", "l", "fav", "2008", "fatma", "doha", "qatar", "flickcom", "100fav", "artistical", "400d", "fatoooma", "adobephotoshopelements50"], "preview_system"=>"photo"}
+Rendering preview/ajax_show_resource
+Completed in 927ms (View: 3, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?preview_system=photo&resource_id=2216684652&tags%5B%5D=camera&tags%5B%5D=blue&tags%5B%5D=winter&tags%5B%5D=sky&tags%5B%5D=stilllife&tags%5B%5D=cloud&tags%5B%5D=white&tags%5B%5D=macro&tags%5B%5D=cute&tags%5B%5D=art&tags%5B%5D=love&tags%5B%5D=home&tags%5B%5D=apple&tags%5B%5D=canon&tags%5B%5D=logo&tags%5B%5D=photo&tags%5B%5D=amazing&tags%5B%5D=nice&tags%5B%5D=mac&tags%5B%5D=flickr&tags%5B%5D=day&tags%5B%5D=ipod&tags%5B%5D=image&tags%5B%5D=artistic&tags%5B%5D=time&tags%5B%5D=cloudy&tags%5B%5D=weekend&tags%5B%5D=picture&tags%5B%5D=l&tags%5B%5D=fav&tags%5B%5D=2008&tags%5B%5D=fatma&tags%5B%5D=doha&tags%5B%5D=qatar&tags%5B%5D=flickcom&tags%5B%5D=100fav&tags%5B%5D=artistical&tags%5B%5D=400d&tags%5B%5D=fatoooma&tags%5B%5D=adobephotoshopelements50&title=In+blue&upload_date=24.+January+2008]
+
+
+Processing PreviewController#ajax_show_resource (for 84.63.39.217 at 2009-05-25 23:00:36) [POST]
+  Parameters: {"title"=>"Apple's heart 13.177 view,thanks!", "resource_id"=>"2532926223", "upload_date"=>"29. May 2008", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>["red", "love", "apple", "fruit", "drops", "heart", "drop", "passion", "romantic", "onwhite", "rosso", "frutta", "cuore", "amore", "romantico", "mela", "passione", "goccia", "gocce", "themoulinrouge", "firstquality", "abigfave", "thegardenofzen", "artedellafoto", "beautifulsecrets", "vision100", "olétusfotos"], "preview_system"=>"photo"}
+Rendering preview/ajax_show_resource
+Completed in 836ms (View: 3, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?preview_system=photo&resource_id=2532926223&tags%5B%5D=red&tags%5B%5D=love&tags%5B%5D=apple&tags%5B%5D=fruit&tags%5B%5D=drops&tags%5B%5D=heart&tags%5B%5D=drop&tags%5B%5D=passion&tags%5B%5D=romantic&tags%5B%5D=onwhite&tags%5B%5D=rosso&tags%5B%5D=frutta&tags%5B%5D=cuore&tags%5B%5D=amore&tags%5B%5D=romantico&tags%5B%5D=mela&tags%5B%5D=passione&tags%5B%5D=goccia&tags%5B%5D=gocce&tags%5B%5D=themoulinrouge&tags%5B%5D=firstquality&tags%5B%5D=abigfave&tags%5B%5D=thegardenofzen&tags%5B%5D=artedellafoto&tags%5B%5D=beautifulsecrets&tags%5B%5D=vision100&tags%5B%5D=ol%C3%A9tusfotos&title=Apple%27s+heart+13.177+view%2Cthanks%21&upload_date=29.+May+2008]
+
+
+Processing SearchController#paginate_search (for 89.13.17.77 at 2009-05-25 23:00:38) [POST]
+  Parameters: {"paginate_system"=>"video", "sort_by"=>"relevance", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto", "page"=>"1", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 718ms (View: 52, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/foto/system/photo+video+bookmark/sort_by/relevance/page/1?paginate_system=video&per_page=8]
+
+
+Processing SearchController#paginate_search (for 89.13.17.77 at 2009-05-25 23:00:43) [POST]
+  Parameters: {"paginate_system"=>"video", "sort_by"=>"relevance", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto", "page"=>"5", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 665ms (View: 51, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/foto/system/photo+video+bookmark/sort_by/relevance/page/5?paginate_system=video&per_page=8]
+
+
+Processing SearchController#paginate_search (for 89.13.17.77 at 2009-05-25 23:00:48) [POST]
+  Parameters: {"paginate_system"=>"video", "sort_by"=>"relevance", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto", "page"=>"4", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 474ms (View: 52, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/foto/system/photo+video+bookmark/sort_by/relevance/page/4?paginate_system=video&per_page=8]
+
+
+Processing PreviewController#ajax_show_resource (for 84.63.39.217 at 2009-05-25 23:00:54) [POST]
+  Parameters: {"title"=>"Yet Another Fashion Victim", "resource_id"=>"34964321", "upload_date"=>"18. August 2005", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>["portrait", "usa", "reflection", "apple", "topf25", "glass", "computer", "powerbook", "oakland", "cafe", "laptop", "fv5", "storefront"], "preview_system"=>"photo"}
+Rendering preview/ajax_show_resource
+Completed in 842ms (View: 3, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?preview_system=photo&resource_id=34964321&tags%5B%5D=portrait&tags%5B%5D=usa&tags%5B%5D=reflection&tags%5B%5D=apple&tags%5B%5D=topf25&tags%5B%5D=glass&tags%5B%5D=computer&tags%5B%5D=powerbook&tags%5B%5D=oakland&tags%5B%5D=cafe&tags%5B%5D=laptop&tags%5B%5D=fv5&tags%5B%5D=storefront&title=Yet+Another+Fashion+Victim&upload_date=18.+August+2005]
+
+
+Processing SearchController#paginate_search (for 89.13.17.77 at 2009-05-25 23:00:54) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 859ms (View: 59, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/foto/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=photo&per_page=8]
+
+
+Processing PreviewController#ajax_show_resource (for 84.63.39.217 at 2009-05-25 23:00:56) [POST]
+  Parameters: {"title"=>"297", "resource_id"=>"72353761", "upload_date"=>"11. December 2005", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>["camera", "apple", "canon", "lens", "mac", "aperture", "ipod", "canonef2470mmf28lusm", "canoneos5d", "applecinemadisplay"], "preview_system"=>"photo"}
+Rendering preview/ajax_show_resource
+Completed in 822ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?preview_system=photo&resource_id=72353761&tags%5B%5D=camera&tags%5B%5D=apple&tags%5B%5D=canon&tags%5B%5D=lens&tags%5B%5D=mac&tags%5B%5D=aperture&tags%5B%5D=ipod&tags%5B%5D=canonef2470mmf28lusm&tags%5B%5D=canoneos5d&tags%5B%5D=applecinemadisplay&title=297&upload_date=11.+December+2005]
+
+
+Processing PreviewController#ajax_show_resource (for 84.63.39.217 at 2009-05-25 23:00:59) [POST]
+  Parameters: {"title"=>"stacked.", "resource_id"=>"102441187", "upload_date"=>"21. February 2006", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>["pink", "black", "nerd", "apple", "powerbook", "psp", "mac", "imac", "ipod", "sony", "cybershot", "mini", "stack", "nano", "shuffle", "gadgets", "60gb", "1stgipod"], "preview_system"=>"photo"}
+Rendering preview/ajax_show_resource
+Completed in 806ms (View: 5, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?preview_system=photo&resource_id=102441187&tags%5B%5D=pink&tags%5B%5D=black&tags%5B%5D=nerd&tags%5B%5D=apple&tags%5B%5D=powerbook&tags%5B%5D=psp&tags%5B%5D=mac&tags%5B%5D=imac&tags%5B%5D=ipod&tags%5B%5D=sony&tags%5B%5D=cybershot&tags%5B%5D=mini&tags%5B%5D=stack&tags%5B%5D=nano&tags%5B%5D=shuffle&tags%5B%5D=gadgets&tags%5B%5D=60gb&tags%5B%5D=1stgipod&title=stacked.&upload_date=21.+February+2006]
+
+
+Processing SearchController#paginate_search (for 89.13.17.77 at 2009-05-25 23:01:00) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"foto", "page"=>"1", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 829ms (View: 79, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/foto/system/photo+video+bookmark/sort_by/relevance/page/1?paginate_system=photo&per_page=8]
+
+
+Processing PreviewController#paginate_preview (for 84.63.39.217 at 2009-05-25 23:01:06) [POST]
+  Parameters: {"sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "id"=>"0", "page"=>"4", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering preview/paginate_preview
+Completed in 4586ms (View: 33, DB: 0) | 200 OK [http://84.63.39.217/paginate_preview/tags/apple/system/photo/0/4/8/relevance]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:01:27) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1086ms (View: 148, DB: 0) | 200 OK [http://84.63.39.217/search/tags/apple/systems/photo+video+bookmark]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 23:01:32) [POST]
+  Parameters: {"paginate_system"=>"video", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 637ms (View: 53, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=video&per_page=8]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 23:01:32) [GET]
+  Parameters: {"tags"=>"foto+water", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1695ms (View: 130, DB: 0) | 200 OK [http://84.63.39.217/search/tags/foto+water/systems/photo+video+bookmark]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 23:01:34) [POST]
+  Parameters: {"paginate_system"=>"video", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "page"=>"4", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 1147ms (View: 54, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/4?paginate_system=video&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 23:01:44) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "page"=>"4", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 967ms (View: 205, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/4?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 23:01:46) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "page"=>"5", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 720ms (View: 80, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/5?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:01:48) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 895ms (View: 142, DB: 0) | 200 OK [http://84.63.39.217/search/tags/apple/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 23:01:53) [GET]
+  Parameters: {"tags"=>"foto+water", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1056ms (View: 123, DB: 0) | 200 OK [http://84.63.39.217/search/tags/foto+water/systems/photo+video+bookmark]
+
+
+Processing PreviewController#show (for 84.63.39.217 at 2009-05-25 23:02:05) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"apple", "id"=>"2967585072", "page"=>"5", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 1700ms (View: 36, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/2967585072/search/tags/apple/sort/relevance/page/5/per_page/8]
+
+
+Processing PreviewController#show (for 89.13.17.77 at 2009-05-25 23:02:07) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"foto+water", "id"=>"420715071", "page"=>"1", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 1930ms (View: 53, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/420715071/search/tags/foto+water/sort/relevance/page/1/per_page/8]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:02:09) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1071ms (View: 340, DB: 0) | 200 OK [http://84.63.39.217/search/tags/apple/systems/photo+video+bookmark]
+
+
+Processing PreviewController#show (for 84.63.39.217 at 2009-05-25 23:02:31) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"apple", "id"=>"2551225476", "page"=>"5", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 1493ms (View: 35, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/2551225476/search/tags/apple/sort/relevance/page/5/per_page/8]
+
+
+Processing PreviewController#paginate_preview (for 84.63.39.217 at 2009-05-25 23:02:39) [POST]
+  Parameters: {"sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "id"=>"0", "page"=>"6", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering preview/paginate_preview
+Completed in 1483ms (View: 34, DB: 0) | 200 OK [http://84.63.39.217/paginate_preview/tags/apple/system/photo/0/6/8/relevance]
+
+
+Processing PreviewController#paginate_preview (for 84.63.39.217 at 2009-05-25 23:02:55) [POST]
+  Parameters: {"sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"apple", "id"=>"0", "page"=>"7", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering preview/paginate_preview
+Completed in 1650ms (View: 36, DB: 0) | 200 OK [http://84.63.39.217/paginate_preview/tags/apple/system/photo/0/7/8/relevance]
+
+
+Processing PreviewController#show (for 89.13.17.77 at 2009-05-25 23:02:58) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"foto+water", "id"=>"2683770994", "page"=>"1", "preview_system"=>"photo", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 1808ms (View: 49, DB: 0) | 200 OK [http://84.63.39.217/preview/show/photo/2683770994/search/tags/foto+water/sort/relevance/page/1/per_page/8]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 23:03:04) [GET]
+  Parameters: {"tags"=>"foto+water", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1038ms (View: 255, DB: 0) | 200 OK [http://84.63.39.217/search/tags/foto+water/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:03:26) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 912ms (View: 160, DB: 0) | 200 OK [http://84.63.39.217/search/tags/apple/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 23:04:02) [GET]
+  Parameters: {"tags"=>"foto ", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1024ms (View: 210, DB: 0) | 200 OK [http://84.63.39.217/search/tags/foto%20/systems/photo+video+bookmark]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:05:01) [GET]
+  Parameters: {"tags"=>" ", "systems_to_search"=>"photo+video+bookmark"}
+Redirected to http://84.63.39.217:3000/
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/tags/%20/systems/photo+video+bookmark]
+
+
+Processing TaginationController#index (for 84.63.39.217 at 2009-05-25 23:05:01) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing TaginationController#index (for 89.13.17.77 at 2009-05-25 23:05:49) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 23:06:13) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/flower/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:06:13) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 991ms (View: 123, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 23:06:49) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"set", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/set/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 23:06:49) [GET]
+  Parameters: {"tags"=>"set", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1065ms (View: 247, DB: 0) | 200 OK [http://84.63.39.217/search/tags/set/systems/photo+video+bookmark]
+
+
+Processing SearchController#search (for 84.63.39.217 at 2009-05-25 23:08:08) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/flower/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:08:08) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 934ms (View: 129, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing PreviewController#show (for 84.63.39.217 at 2009-05-25 23:08:15) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"flower", "id"=>"0Zbn7Khv8zM", "page"=>"1", "preview_system"=>"video", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 892ms (View: 372, DB: 0) | 200 OK [http://84.63.39.217/preview/show/video/0Zbn7Khv8zM/search/tags/flower/sort/relevance/page/1/per_page/8]
+
+
+Processing SearchController#search (for 89.13.17.77 at 2009-05-25 23:09:06) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>"serebro", "video"=>"video"}
+Redirected to http://84.63.39.217:3000/search/tags/serebro/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://84.63.39.217/search/search]
+
+
+Processing SearchController#list (for 89.13.17.77 at 2009-05-25 23:09:07) [GET]
+  Parameters: {"tags"=>"serebro", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 883ms (View: 111, DB: 0) | 200 OK [http://84.63.39.217/search/tags/serebro/systems/photo+video+bookmark]
+
+
+Processing PreviewController#show (for 89.13.17.77 at 2009-05-25 23:09:29) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"serebro", "id"=>"1vmygV0OdT0", "page"=>"1", "preview_system"=>"video", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 724ms (View: 43, DB: 0) | 200 OK [http://84.63.39.217/preview/show/video/1vmygV0OdT0/search/tags/serebro/sort/relevance/page/1/per_page/8]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:11:08) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1383ms (View: 204, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 23:11:20) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "page"=>"3", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 143ms (View: 34, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/flower/system/photo+video+bookmark/sort_by/relevance/page/3?paginate_system=bookmark&per_page=8]
+
+
+Processing PreviewController#ajax_show_resource (for 89.13.17.77 at 2009-05-25 23:11:24) [POST]
+  Parameters: {"title"=>"Serebro - Опиум /Opium/. OFFICIAL EXCLUSIVE!", "resource_id"=>"LtfEC55vFkg", "upload_date"=>"06. May 2008", "authenticity_token"=>"iNDeGvNKDbu7iEnU/msR5jvSnOaqRvDupWUbmSxG+WQ=", "tags"=>["Серебро", "serebro", "Максим", "Фадеев", "maxim", "fadeev", "Опиум", "opium", "new", "video", "Новое", "видео", "Мальфа", "malfa"], "preview_system"=>"video", "preview_thumb_url"=>"http://www.youtube.com/v/LtfEC55vFkg", "description"=>"муз.М.Фадеев сл. М.Фадеев реж.М.Фадеев (с) ООО Издательство Монолит (р) ООО Близнецы 2008", "link_url"=>"http://de.youtube.com/watch?v=LtfEC55vFkg"}
+Rendering preview/ajax_show_resource
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?description=%D0%BC%D1%83%D0%B7.%D0%9C.%D0%A4%D0%B0%D0%B4%D0%B5%D0%B5%D0%B2+%D1%81%D0%BB.+%D0%9C.%D0%A4%D0%B0%D0%B4%D0%B5%D0%B5%D0%B2+%D1%80%D0%B5%D0%B6.%D0%9C.%D0%A4%D0%B0%D0%B4%D0%B5%D0%B5%D0%B2+%28%D1%81%29+%D0%9E%D0%9E%D0%9E+%D0%98%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE+%D0%9C%D0%BE%D0%BD%D0%BE%D0%BB%D0%B8%D1%82+%28%D1%80%29+%D0%9E%D0%9E%D0%9E+%D0%91%D0%BB%D0%B8%D0%B7%D0%BD%D0%B5%D1%86%D1%8B+2008&link_url=http%3A%2F%2Fde.youtube.com%2Fwatch%3Fv%3DLtfEC55vFkg&preview_system=video&preview_thumb_url=http%3A%2F%2Fwww.youtube.com%2Fv%2FLtfEC55vFkg&resource_id=LtfEC55vFkg&tags%5B%5D=%D0%A1%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D0%BE&tags%5B%5D=serebro&tags%5B%5D=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC&tags%5B%5D=%D0%A4%D0%B0%D0%B4%D0%B5%D0%B5%D0%B2&tags%5B%5D=maxim&tags%5B%5D=fadeev&tags%5B%5D=%D0%9E%D0%BF%D0%B8%D1%83%D0%BC&tags%5B%5D=opium&tags%5B%5D=new&tags%5B%5D=video&tags%5B%5D=%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5&tags%5B%5D=%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE&tags%5B%5D=%D0%9C%D0%B0%D0%BB%D1%8C%D1%84%D0%B0&tags%5B%5D=malfa&title=Serebro+-+%D0%9E%D0%BF%D0%B8%D1%83%D0%BC+%2FOpium%2F.+OFFICIAL+EXCLUSIVE%21&upload_date=06.+May+2008]
+
+
+Processing SearchController#list_photo (for 84.63.39.217 at 2009-05-25 23:11:51) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo"}
+Rendering template within layouts/application
+Rendering search/list_system
+Completed in 2018ms (View: 379, DB: 0) | 200 OK [http://84.63.39.217/search/list_photo?systems_to_search=photo&tags=flower]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:12:05) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 899ms (View: 134, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 23:12:36) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 922ms (View: 65, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/flower/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 23:12:39) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "page"=>"3", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 1222ms (View: 60, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/flower/system/photo+video+bookmark/sort_by/relevance/page/3?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 23:12:42) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "page"=>"4", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 1104ms (View: 57, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/flower/system/photo+video+bookmark/sort_by/relevance/page/4?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 84.63.39.217 at 2009-05-25 23:12:47) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "page"=>"5", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 733ms (View: 56, DB: 0) | 200 OK [http://84.63.39.217/paginate/tags/flower/system/photo+video+bookmark/sort_by/relevance/page/5?paginate_system=photo&per_page=8]
+
+
+Processing PreviewController#show (for 84.63.39.217 at 2009-05-25 23:13:02) [GET]
+  Parameters: {"sort_by"=>"relevance", "tags"=>"flower", "id"=>"kyXUHkoVxjE", "page"=>"1", "preview_system"=>"video", "per_page"=>"8"}
+Rendering template within layouts/application
+Rendering preview/show
+Completed in 708ms (View: 63, DB: 0) | 200 OK [http://84.63.39.217/preview/show/video/kyXUHkoVxjE/search/tags/flower/sort/relevance/page/1/per_page/8]
+
+
+Processing TaginationController#index (for 89.13.17.77 at 2009-05-25 23:13:46) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://84.63.39.217/]
+
+
+Processing PreviewController#ajax_show_resource (for 84.63.39.217 at 2009-05-25 23:14:04) [POST]
+  Parameters: {"title"=>"Tearwave - Lotus Flower", "resource_id"=>"sjlYFkPGuuk", "upload_date"=>"22. November 2006", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>["shoegaze", "tearwave", "lotus", "flower", "dream", "pop", "cocteau", "twins", "lush", "slowdive", "projekt", "records", "goth", "music", "lycia", "darkwave"], "preview_system"=>"video", "preview_thumb_url"=>"http://www.youtube.com/v/sjlYFkPGuuk", "description"=>"A video of Tearwave with their beautiful song Lotus Flower.", "link_url"=>"http://de.youtube.com/watch?v=sjlYFkPGuuk"}
+Rendering preview/ajax_show_resource
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://84.63.39.217/preview/ajax_show_resource?description=A+video+of+Tearwave+with+their+beautiful+song+Lotus+Flower.&link_url=http%3A%2F%2Fde.youtube.com%2Fwatch%3Fv%3DsjlYFkPGuuk&preview_system=video&preview_thumb_url=http%3A%2F%2Fwww.youtube.com%2Fv%2FsjlYFkPGuuk&resource_id=sjlYFkPGuuk&tags%5B%5D=shoegaze&tags%5B%5D=tearwave&tags%5B%5D=lotus&tags%5B%5D=flower&tags%5B%5D=dream&tags%5B%5D=pop&tags%5B%5D=cocteau&tags%5B%5D=twins&tags%5B%5D=lush&tags%5B%5D=slowdive&tags%5B%5D=projekt&tags%5B%5D=records&tags%5B%5D=goth&tags%5B%5D=music&tags%5B%5D=lycia&tags%5B%5D=darkwave&title=Tearwave+-+Lotus+Flower&upload_date=22.+November+2006]
+
+
+Processing PreviewController#paginate_preview (for 84.63.39.217 at 2009-05-25 23:14:07) [POST]
+  Parameters: {"sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "id"=>"0", "page"=>"2", "preview_system"=>"video", "per_page"=>"8"}
+Rendering preview/paginate_preview
+Completed in 742ms (View: 41, DB: 0) | 200 OK [http://84.63.39.217/paginate_preview/tags/flower/system/video/0/2/8/relevance]
+
+
+Processing PreviewController#paginate_preview (for 84.63.39.217 at 2009-05-25 23:14:15) [POST]
+  Parameters: {"sort_by"=>"relevance", "authenticity_token"=>"y0ZbSfHquchhw91Bh3+Bd/sq9glxM6aedM1X5G0Co+M=", "tags"=>"flower", "id"=>"0", "page"=>"3", "preview_system"=>"video", "per_page"=>"8"}
+Rendering preview/paginate_preview
+Completed in 616ms (View: 38, DB: 0) | 200 OK [http://84.63.39.217/paginate_preview/tags/flower/system/video/0/3/8/relevance]
+
+
+Processing SearchController#list (for 84.63.39.217 at 2009-05-25 23:15:47) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1117ms (View: 350, DB: 0) | 200 OK [http://84.63.39.217/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing TaginationController#index (for 127.0.0.1 at 2009-05-28 17:51:03) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 48ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TaginationController#index (for 127.0.0.1 at 2009-05-28 17:51:54) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-28 17:53:24) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"flower", "video"=>"video"}
+Redirected to http://localhost:3000/search/tags/flower/systems/photo+video+bookmark
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing SearchController#list (for 127.0.0.1 at 2009-05-28 17:53:24) [GET]
+  Parameters: {"tags"=>"flower", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1100ms (View: 148, DB: 0) | 200 OK [http://localhost/search/tags/flower/systems/photo+video+bookmark]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:54:08) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"recent", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"flower", "page"=>"1", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 912ms (View: 56, DB: 0) | 200 OK [http://localhost/paginate/tags/flower/system/photo+video+bookmark/sort_by/recent/page/1?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:54:10) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"flower", "page"=>"1", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 838ms (View: 51, DB: 0) | 200 OK [http://localhost/paginate/tags/flower/system/photo+video+bookmark/sort_by/relevance/page/1?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:54:15) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"flower", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 1069ms (View: 187, DB: 0) | 200 OK [http://localhost/paginate/tags/flower/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:54:18) [POST]
+  Parameters: {"paginate_system"=>"photo", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"flower", "page"=>"1", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 821ms (View: 59, DB: 0) | 200 OK [http://localhost/paginate/tags/flower/system/photo+video+bookmark/sort_by/relevance/page/1?paginate_system=photo&per_page=8]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-28 17:57:12) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "video"=>"video"}
+Redirected to http://localhost:3000/search/tags/apple/systems/photo+video+bookmark
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing SearchController#list (for 127.0.0.1 at 2009-05-28 17:57:12) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1216ms (View: 191, DB: 0) | 200 OK [http://localhost/search/tags/apple/systems/photo+video+bookmark]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:15) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"2", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 225ms (View: 67, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/2?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:19) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"3", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 207ms (View: 46, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/3?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:22) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"4", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 202ms (View: 48, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/4?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:26) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"5", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 194ms (View: 46, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/5?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:29) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"6", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 354ms (View: 202, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/6?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:33) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"7", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 216ms (View: 46, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/7?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:37) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"8", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 236ms (View: 54, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/8?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:41) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"9", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 222ms (View: 53, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/9?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:47) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"10", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 202ms (View: 49, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/10?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:50) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"11", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 324ms (View: 49, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/11?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:53) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"12", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 233ms (View: 53, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/12?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:58:56) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"13", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 108ms (View: 21, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/13?paginate_system=bookmark&per_page=8]
+
+
+Processing SearchController#paginate_search (for 127.0.0.1 at 2009-05-28 17:59:00) [POST]
+  Parameters: {"paginate_system"=>"bookmark", "sort_by"=>"relevance", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "page"=>"1", "systems_to_search"=>"photo+video+bookmark", "per_page"=>"8"}
+Rendering search/paginate_search
+Completed in 185ms (View: 42, DB: 0) | 200 OK [http://localhost/paginate/tags/apple/system/photo+video+bookmark/sort_by/relevance/page/1?paginate_system=bookmark&per_page=8]
+
+
+Processing TaginationController#index (for 127.0.0.1 at 2009-05-28 21:08:24) [GET]
+Rendering template within layouts/application
+Rendering tagination/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-28 21:08:28) [POST]
+  Parameters: {"photo"=>"photo", "commit"=>"Search", "bookmark"=>"bookmark", "authenticity_token"=>"zWp9UUWxGo5VkNCOSY8HGp3ET8CJLyYwmMC0nNefOR4=", "tags"=>"apple", "video"=>"video"}
+Redirected to http://localhost:3000/search/tags/apple/systems/photo+video+bookmark
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing SearchController#list (for 127.0.0.1 at 2009-05-28 21:08:28) [GET]
+  Parameters: {"tags"=>"apple", "systems_to_search"=>"photo+video+bookmark"}
+Rendering template within layouts/application
+Rendering search/list
+Completed in 1260ms (View: 162, DB: 0) | 200 OK [http://localhost/search/tags/apple/systems/photo+video+bookmark]

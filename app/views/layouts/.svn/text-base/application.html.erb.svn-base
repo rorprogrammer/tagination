@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Tagination is a Tag based search engine">  
+	<meta name="keywords" content="Tag, tags, tag, search, suche, suchmaschine, searchengine, tagging, tag-based-search, eugen, tagination, Tagination, tagnation, Tagnation, photo, video, bookmark, photos, videos, bookmarks, Photos, Videos, Bookmarks">  
+	<title><%= @title%></title>
+	<%= javascript_include_tag :defaults, 'tooltip', 'builder'%>
+	
+	<%= stylesheet_link_tag 'main', 'search', 'preview', 'tooltips'%>
+</head>
+<body>
+	<div id="container">
+		<div id="content_header"></div>
+		<%= yield %>
+		<div class="clear"></div>
+		<div id="footer">
+			©Taginaion 2008 | <%= link_to "About", :controller => :tagination, :action => :about %>
+	   </div>
+	</div>
+</body>
+</html>

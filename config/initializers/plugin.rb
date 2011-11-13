@@ -1,0 +1,7 @@
+require 'rubygems'
+require 'net/http'
+require 'erb'
+require 'uri'
+require 'xmlrpc/client'
+require 'rexml/document'
+require 'httpclient'

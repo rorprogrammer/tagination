@@ -1,0 +1,70 @@
+<% if list.tagging_system.media_type == "photo" %>
+			<% if list.tagging_system.nick == "flickr"%> 
+				<div class="link1_label_active">
+			<% else %>
+				<div class="link1_label">
+			<% end %>
+				<div id="one"><div id="two"><div id="three"><div id="four">
+					<div id="f_label">
+						<%= create_system_links("flickr.png", "flickr", 1, 'relevance') %>
+					</div>
+				</div></div></div></div>
+			</div>
+			<% if list.tagging_system.nick == "smugmug"%> 
+				<div class="link2_label_active">
+			<% else %>
+				<div class="link2_label">
+			<% end %>
+				<div id="one"><div id="two"><div id="three"><div id="four">
+					<div id="f_label">
+						<%= create_system_links("smugmug.png", "smugmug", 1, 'relevance') %>
+					</div>
+				</div></div></div></div>
+				</div>
+		<% elsif list.tagging_system.media_type == "video" %>
+			<% if list.tagging_system.nick == "youtube"%> 
+				<div class="link1_label_active">
+			<% else %>
+				<div class="link1_label">
+			<% end %>
+				<div id="one"><div id="two"><div id="three"><div id="four">
+					<div id="f_label">
+						<%= create_system_links("youtube.png", "youtube", 1, 'relevance') %>
+					</div>
+				</div></div></div></div>
+			</div>
+			<% if list.tagging_system.nick == "myvideo"%> 
+				<div class="link2_label_active">
+			<% else %>
+				<div class="link2_label">
+			<% end %>
+				<div id="one"><div id="two"><div id="three"><div id="four">
+					<div id="f_label">
+						<%= create_system_links("myvideo.png", "myvideo", 1, 'relevance') %>
+					</div>
+				</div></div></div></div>
+				</div>
+		<% elsif list.tagging_system.media_type == "bookmark" %>
+			<% if list.tagging_system.nick == "bibsonomy"%> 
+				<div class="link1_label_active">
+			<% else %>
+				<div class="link1_label">
+			<% end %>
+				<div id="one"><div id="two"><div id="three"><div id="four">
+					<div id="f_label">
+						<%= create_system_links("bibsonomy.png", "bibsonomy", 1, 'relevance') %>	
+					</div>
+				</div></div></div></div>
+			</div>
+			<% if list.tagging_system.nick == "delicious"%> 
+				<div class="link2_label_active">
+			<% else %>
+				<div class="link2_label">
+			<% end %>
+				<div id="one"><div id="two"><div id="three"><div id="four">
+					<div id="f_label">
+						<%= create_system_links("delicious.png", "delicious", 1, 'relevance') %>
+					</div>
+				</div></div></div></div>
+				</div>
+		<% end %>

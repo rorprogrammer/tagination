@@ -1,0 +1,17 @@
+list = @response_list.resources_lists[@paginate_system]
+page.visual_effect(:fade, "#{@paginate_system}_replace", :duration => 0.4)
+page.delay 0.5 do
+  page.replace_html("#{@paginate_system}_replace", 
+                  :partial => "resource", :collection => list.resources,
+                  :locals => {:system => @paginate_system,
+                              :media_type => @paginate_system})
+  page.replace_html("#{@paginate_system}_list_nav",
+                  :partial => "list_navigation", :object => list,
+                  :locals => {:system => @paginate_system,
+                              :sort_by => @request_params[@paginate_system][:sort_by].to_s})
+  page.insert_html :bottom,  "#{@paginate_system}_replace", javascript_tag(%{ $$(\"p .test\").each ( function(link) {
+                  new Tooltip(link, {mouseFollow: false});}) })
+  page.delay 0.5 do
+    page.visual_effect(:appear, "#{@paginate_system}_replace", :duration => 0.4, :queue =>"end")
+  end
+end

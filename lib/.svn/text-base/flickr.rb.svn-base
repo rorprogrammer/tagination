@@ -1,0 +1,142 @@
+require 'iconv'
+
+# the flickr library class provides methods to search
+# and retrieving the flickr data
+class Flickr
+  # the initialize method for the flickr class 
+  def initialize
+    @api_key = "0339487bdafdc7bb460a6104ef64fc0e"
+    @service_uri = "http://www.flickr.com/services/xmlrpc/"
+    @ic = Iconv.new('UTF-8//IGNORE', 'UTF-8');
+    @tagging_system = General::TaggingSystem.new(:name => "FLICKR", 
+                                                 :nick => "flickr", 
+                                                 :media_type => "photo",
+                                                 :url  => "http://www.flickr.com/")
+  end
+  
+  # mehtod which create a resource_url for a flickr resource 
+  # type parameter represent the kind of the url o=original, t= thumbnail, s=small
+  def get_url_for(farm_id, server_id, res_id, secret, type)
+    if(type.nil?)
+      resource_url = "http://farm#{farm_id}.static.flickr.com/"+
+                     "#{server_id}/#{res_id}_#{secret}.jpg"
+    else
+      resource_url = "http://farm#{farm_id}.static.flickr.com/"+
+                     "#{server_id}/#{res_id}_#{secret}_#{type}.jpg"
+    end
+    return resource_url
+  end
+  
+  # method provides the remove search tags funktion
+  def remove_search_tags(search_tags, resource_tags)
+    tags_to_remove = search_tags.split()
+    tags_to_response = resource_tags.split()-tags_to_remove
+    tags_to_response = resource_tags.split()
+    tag_list = Array.new
+    tags_to_response.each do |tag|
+      tag_list << tag if tag.size < 25
+    end
+    return tag_list.join(" ")
+  end
+  
+  #time normalization
+  def human_time(miliseconds)
+    time = Time.at(miliseconds.to_i)
+    return time.strftime("%d. %B %Y")
+  end
+  
+  def flickerize_sort(sort_by)
+    return "relevance" if sort_by.to_s == "relevance"
+    return "date-posted-desc" if sort_by.to_s == "recent"
+  end
+  
+  # method to search across the flick data
+  def search(tags, params)
+    begin
+      server = XMLRPC::Client.new2(@service_uri)
+      flickr_arguments = {:api_key => @api_key, 
+                          :tag_mode => "all", 
+                          :page => params[:page].to_i,
+                          :per_page => params[:per_page].to_i, 
+                          :tags => tags.downcase.split().join(','),
+                          :sort => flickerize_sort(params[:sort_by]),
+                          :extras => "tags, date_upload"}
+      flickr_response = server.call("flickr.photos.search", flickr_arguments)
+      flickr_response = @ic.iconv(flickr_response)
+      document = REXML::Document.new flickr_response
+    rescue Exception => e
+      puts "Fehler beim Flickrrequest: #{e.to_s}"
+      document = REXML::Document.new
+    else
+      #the response dependent attributes
+      resource_list = General::ResourceList.new(:tagging_system => @tagging_system,
+                                                :resources => Array.new,
+                                                :total_pages => document.root.attributes["pages"].to_i,
+                                                :total_results => document.root.attributes["total"].to_i,
+                                                :actual_page => params[:page].to_i)
+      if document.root.has_elements?
+        #get the resourceproperties
+        document.root.each_element do |photo|
+          photo_id           = photo.attributes["id"]
+          photo_title        = photo.attributes["title"]
+          photo_upload_date  = human_time(photo.attributes["dateupload"])
+          photo_tags         = photo.attributes["tags"].downcase.split
+          # resource url relevant properties
+          photo_farm           = photo.attributes["farm"]
+          photo_server         = photo.attributes["server"]
+          photo_secret         = photo.attributes["secret"]
+          photo_description    = nil
+          
+          resource = General::Resource.new(:resource_id => photo_id,
+                                  :title => photo_title,
+                                  :upload_date => photo_upload_date,
+                                  :tags => photo_tags,
+                                  :description => photo_description,
+                                  :list_thumb_url => get_url_for(photo_farm, photo_server, photo_id, photo_secret, "t"),
+                                  :js_thumb_url => get_url_for(photo_farm, photo_server, photo_id, photo_secret, "m"))
+          
+          resource_list.resources.push(resource)
+        end
+      end
+      return resource_list
+    end
+  end
+  
+  def getInfo(photo_id)
+    begin
+      server = XMLRPC::Client.new2(@service_uri)
+      flickr_arguments = {:api_key => @api_key, :photo_id => photo_id}
+      flickr_response = server.call("flickr.photos.getInfo", flickr_arguments)
+      flickr_response = @ic.iconv(flickr_response)
+      document = REXML::Document.new flickr_response 
+    rescue Exception => e
+      puts "Fehler beim Flickrrequest: #{e.to_s}"
+      document = REXML::Document.new  
+    else
+      photo_id          = document.root.attributes['id']
+      photo_title       = document.root.elements['title'].text
+      photo_upload_date = human_time(document.root.attributes['dateuploaded'])
+      photo_tags = Array.new
+      document.root.elements['tags'].elements.each do |tag|
+        photo_tags << tag.text.downcase if tag.text.downcase.size < 25
+      end
+      photo_description = document.root.elements['description'].text
+      photo_farm         = document.root.attributes["farm"]
+      photo_server       = document.root.attributes["server"]
+      photo_secret       = document.root.attributes["secret"]
+      
+      preview_thumb_url = get_url_for(photo_farm, photo_server, photo_id, photo_secret, nil)
+      link_url          = document.root.elements['urls'].elements['url'].text
+      
+      resource = General::Resource.new(:resource_id => photo_id,
+                                       :title => photo_title,
+                                       :upload_date => photo_upload_date,
+                                       :tags => photo_tags,
+                                       :description => photo_description,
+                                       :preview_thumb_url => preview_thumb_url,
+                                       :link_url => link_url)
+      return resource
+    end
+    return nil
+  end
+end

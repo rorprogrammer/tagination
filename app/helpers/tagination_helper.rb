@@ -1,0 +1,2 @@
+module TaginationHelper
+end

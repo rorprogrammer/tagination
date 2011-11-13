@@ -1,0 +1,11 @@
+<ul>
+	<li class="list_header_title"><%= object.tagging_system.media_type.capitalize.pluralize %></li>
+	<li class="list_header_results"><%= "Results: \""+object.total_results.to_s+ "\""%></li>
+	<li	class="list_header_pages">
+		<%= link_to_function image_tag('arrow-up.png'), 
+				:onclick => %{Effect.toggle('#{object.tagging_system.media_type}_link_replace', 'appear'); 
+						    Effect.toggle('#{object.tagging_system.media_type}_table', 'blind'); 
+							Effect.toggle('#{object.tagging_system.media_type}_list_nav', 'slide');} %>
+		<%= "Page: \""+object.actual_page.to_s+" of "+object.total_pages.to_s+"\""%>
+	</li>
+</ul>

@@ -1,0 +1,9 @@
+<ul>
+	<li class="list_header_title">
+		sort_by:<%= create_nav_link("relevance", "1",  system, "relevance", sort_by=="relevance")%> 
+			   |<%= create_nav_link("most recent", "1", system, "recent", sort_by=="recent")%>
+	</li>
+	<li class="list_header_pages">
+		<%= create_navigation_links(object.actual_page, object.total_pages, system, sort_by) %>
+	</li>
+</ul>

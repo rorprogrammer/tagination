@@ -1,0 +1,47 @@
+<div class="td">
+<div id="res_table" >
+	<div class="tr_image_<%=media_type%>">
+		<div class="td_res">
+			<p class="img">
+				<%= link_to image_tag(object.list_thumb_url), 
+						   preview_path(:id => resource.resource_id, 
+										:preview_system => media_type, 
+										:tags => @tags.join('+'), 
+										:page => @request_params[media_type][:page],
+										:per_page => @request_params[media_type][:per_page], 
+										:sort_by => @request_params[media_type][:sort_by]),
+					    				:class => "test",
+										:title => %{#{image_tag(resource.js_thumb_url)}} %>
+			</p>
+		</div>
+	</div>
+	<div class="tr_title">
+		<div class="td_res">
+		<% if(resource.title.strip.length > 20)%>
+			<%= h(resource.title.strip.slice(0..12))+("...") %>
+		<% else%>
+			<%= h(resource.title.strip)%>
+		<% end %>
+		</div>
+	</div>
+	<div class="tr_date">
+		<div class="td_res">
+		<%= h(resource.upload_date)%>
+		</div>
+	</div>
+	<div class="tr_tags">
+		<div class="td_res">
+			<% if resource.tags.length > 5 %>
+				<% resource.tags.slice(0..5).each do |tag| %>
+					<span class="list_tag"><%= create_link(tag, 50, 11, @systems_to_search)%></span>
+				<% end %>
+					<span class="list_tag">...</span>
+			<% else%>
+				<% resource.tags.each do |tag| %>
+					<span class="list_tag"><%= create_link(tag, 50, 11, @systems_to_search)%></span>
+				<% end %>
+			<% end %>
+		</div>
+	</div>
+</div>
+</div>

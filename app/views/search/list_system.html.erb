@@ -1,0 +1,16 @@
+<div id="search_content">
+ 	<div id="tab">
+ 		<%= render :partial => 'tabs' %>
+ 	</div>
+ 	<div id="result_lists">
+ 		<% @response_list.resources_lists.each do |system, list|%>
+		<% if !list.nil?%>
+			<div id="<%= list.tagging_system.media_type%>_list" align="center">
+ 				<% render :partial => "result_list", 
+						   :locals => {:list => list, :system => system} %>
+			</div>
+		<%end%>
+		<%end%>
+ 	</div>
+</div>
+

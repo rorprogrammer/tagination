@@ -1,0 +1,171 @@
+#require "flickr"
+module Service
+  
+  # a generic record that initializes instance variables from the supplied hash
+# mapping symbol names to their respective values.
+  class ParamInitializer
+    def initialize (params)
+      if params
+        params.each do |key, value| 
+          instance_variable_set("@#{key}", value) if respond_to?(key.to_s)
+        end
+      end
+    end
+  end
+  
+  #class for deposit the ResponseList with a taglist or a tagcloud
+  class ResponseList < ParamInitializer
+    # a list of resources from different systems
+    attr_accessor :resources_lists
+    # tags that are used to generate te list
+    attr_accessor :searched_tags
+    # a hash of the tagclouds according to a type and a general one
+    attr_accessor :tag_clouds
+    # future tag clusters for significant domains
+    attr_accessor :tag_clusters
+  end
+  
+  # the main class of the service module which provides methods
+  # for the controllers to search the tagging plattforms
+  class ExternalRequest
+    
+    # method search in the tagging systems resource for given tags
+    def send_request(tags, systems)
+      response_list = ResponseList.new(:resources_lists => Hash.new,
+                                      :searched_tags => tags.downcase.split(),
+                                      :tag_clouds => Hash.new,
+                                      :tag_clusters => Hash.new)
+      # set the searched tags to response list
+      #response_list.searched_tags = tags.downcase.split()
+      
+       # Tagclouds general and for each type
+      general_tag_cloud  = General::TagList.new(:resource_type => 'general', :tags => Hash.new)
+      photo_tag_cloud    = General::TagList.new(:resource_type => 'photo', :tags => Hash.new)
+      video_tag_cloud    = General::TagList.new(:resource_type => 'video', :tags => Hash.new)
+      bookmark_tag_cloud = General::TagList.new(:resource_type => 'bookmark', :tags => Hash.new)
+
+      # the search thread accelarate the resquest time
+      threads = Array.new
+      # initialize the threads for each systemrequest
+      systems.each do |name, params|
+        if name == 'photo'
+          flickr = Flickr.new()
+          threads << Thread.new{
+            response_list.resources_lists[name] = flickr.search(tags, params)
+            tag_list = self.extract_tags(response_list.resources_lists[name])
+            photo_tag_cloud.merge_list(tag_list)
+          }
+        end
+        if name == 'video'
+          youtube = Youtube.new()
+          threads << Thread.new{
+            response_list.resources_lists[name] = youtube.search(tags, params)
+            tag_list = self.extract_tags(response_list.resources_lists[name])
+            video_tag_cloud.merge_list(tag_list)
+          }
+        end
+        if name == 'bookmark'
+           bipsonomy = Bipsonomy.new()
+           threads << Thread.new{
+            response_list.resources_lists[name] = bipsonomy.search(tags, params)
+            tag_list = self.extract_tags(response_list.resources_lists[name])
+            bookmark_tag_cloud.merge_list(tag_list)
+          }
+        end
+      end
+      # starts the threads
+      threads.each { |thread| thread.join}
+      
+      
+      general_tag_cloud.merge_list(photo_tag_cloud) if !photo_tag_cloud.tags.empty?
+      general_tag_cloud.merge_list(video_tag_cloud) if !video_tag_cloud.tags.empty?
+      general_tag_cloud.merge_list(bookmark_tag_cloud) if !bookmark_tag_cloud.tags.empty?
+      
+      response_list.tag_clouds['general']  = general_tag_cloud
+      
+      return response_list
+    end
+    
+    def send_system_request(tags, systems)
+      
+      response_list = ResponseList.new(:resources_lists => Hash.new,
+                                      :searched_tags => tags.downcase.split(),
+                                      :tag_clouds => Hash.new,
+                                      :tag_clusters => Hash.new)
+                                      
+       # the search thread accelarate the resquest time
+      threads = Array.new
+      @photo_tag_cloud
+      if systems.has_key?('flickr')
+        @photo_tag_cloud    = General::TagList.new(:resource_type => 'photo', :tags => Hash.new)
+        flickr = Flickr.new()
+        threads << Thread.new{
+            response_list.resources_lists['flickr'] = flickr.search(tags, systems['flickr'])
+            if !response_list.resources_lists['flickr'].nil?
+              tag_list = self.extract_tags(response_list.resources_lists['flickr'])
+              @photo_tag_cloud.merge_list(tag_list)
+            end}
+      end
+      if systems.has_key?('smugmug')
+         smugmug = Smugmug.new()
+         threads << Thread.new{
+            response_list.resources_lists['smugmug'] = smugmug.search(tags, systems['smugmug'])
+            if !response_list.resources_lists['smugmug'].nil?
+            tag_list = self.extract_tags(response_list.resources_lists['smugmug'])
+            @photo_tag_cloud.merge_list(tag_list)
+            end
+          }
+      end
+      if systems.has_key?('youtube')
+        @video_tag_cloud    = General::TagList.new(:resource_type => 'video', :tags => Hash.new)
+        youtube = Youtube.new()
+        threads << Thread.new{
+            response_list.resources_lists['youtube'] = youtube.search(tags, systems['youtube'])
+            if !response_list.resources_lists['youtube'].nil?
+            tag_list = self.extract_tags(response_list.resources_lists['youtube'])
+            @video_tag_cloud.merge_list(tag_list)
+            end
+          }
+      end
+      if systems.has_key?('bibsonomy')
+        @bookmark_tag_cloud = General::TagList.new(:resource_type => 'bookmark', :tags => Hash.new)
+        bipsonomy = Bipsonomy.new()
+        threads << Thread.new{
+            response_list.resources_lists['bipsonomy'] = bipsonomy.search(tags, systems['bibsonomy'])
+            tag_list = self.extract_tags(response_list.resources_lists['bipsonomy'])
+            @bookmark_tag_cloud.merge_list(tag_list)
+          }
+      end
+      # starts the threads
+      threads.each { |thread| thread.join}
+      
+      response_list.tag_clouds['photo'] = @photo_tag_cloud if systems.has_key?('flickr')
+      response_list.tag_clouds['video'] = @video_tag_cloud if systems.has_key?('youtube')
+      response_list.tag_clouds['bookmark'] = @bookmark_tag_cloud if systems.has_key?('bibsonomy')
+      
+      return response_list
+    end
+    
+    # get resource information from the tagging system
+    def getInfo(system, resource_id)
+      if system == 'photo'
+        flickr = Flickr.new()
+        return flickr.getInfo(resource_id)
+      end
+      if system == "video"
+      end
+    end
+    # method to extract tags from a resourcelist and returns a taglist
+    def extract_tags(list)
+      tag_list = General::TagList.new(:resource_type => nil, :tags => Hash.new)
+      list.resources.each do |res|
+        res.tags.each do |tag|
+          if(tag.downcase.to_s.length < 20)
+            tag_list.add(tag.downcase.to_s)
+          end
+        end
+      end
+      return tag_list
+    end 
+  end
+end

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Untitled Document</title>
+	</head>
+	<body>
+<span class="outer" title="#E3EDEC">
+<span class="shadow" style="border: 1px solid rgb(178, 186, 185); background-color: rgb(207, 217, 216);">
+<span class="color" style="background-color: rgb(227, 237, 236);"/>
+</span>
+</span>
+<span class="outer" title="#90ABBE">
+<span class="shadow" style="border: 1px solid rgb(105, 125, 139); background-color: rgb(129, 153, 170);">
+<span class="color" style="background-color: rgb(144, 171, 190);"/>
+</span>
+</span>
+<span class="outer" title="#D78807">
+<span class="shadow" style="border: 1px solid rgb(164, 104, 5); background-color: rgb(195, 123, 6);">
+<span class="color" style="background-color: rgb(215, 136, 7);"/>
+</span>
+</span>
+<span class="outer" title="#C74E05">
+<span class="shadow" style="border: 1px solid rgb(148, 58, 4); background-color: rgb(179, 70, 4);">
+<span class="color" style="background-color: rgb(199, 78, 5);"/>
+</span>
+</span>
+<span class="outer" title="#CA2400">
+<span class="shadow" style="border: 1px solid rgb(151, 27, 0); background-color: rgb(182, 32, 0);">
+<span class="color" style="background-color: rgb(202, 36, 0);"/>
+</span>
+</span>
+<span class="outer" title="#E9DF9A">
+<span class="shadow" style="border: 1px solid rgb(182, 174, 120); background-color: rgb(213, 203, 141);">
+<span class="color" style="background-color: rgb(233, 223, 154);"/>
+</span>
+</span>
+<span class="outer" title="#7A8630">
+<span class="shadow" style="border: 1px solid rgb(76, 83, 30); background-color: rgb(103, 114, 41);">
+<span class="color" style="background-color: rgb(122, 134, 48);"/>
+</span>
+</span>
+<span class="outer" title="#3D451E">
+<span class="shadow" style="border: 1px solid rgb(16, 18, 8); background-color: rgb(43, 49, 21);">
+<span class="color" style="background-color: rgb(61, 69, 30);"/>
+</span>
+</span>
+<span class="outer" title="#C4AD84">
+<span class="shadow" style="border: 1px solid rgb(145, 128, 98); background-color: rgb(176, 155, 118);">
+<span class="color" style="background-color: rgb(196, 173, 132);"/>
+</span>
+</span>
+<span class="outer" title="#AD7D4F">
+<span class="shadow" style="border: 1px solid rgb(122, 88, 56); background-color: rgb(153, 110, 70);">
+<span class="color" style="background-color: rgb(173, 125, 79);"/>
+</span>
+</span>
+	</body>
+</html>
+
+<!--from resource view -->
+<div class="tr_title">
+		<div class="td_res">
+		<% if(object.title.strip.length > 20)%>
+			<%= h(object.title.strip.slice(0..20))+("...") %>
+		<% else%>
+			<%= h(object.title.strip)%>
+		<% end %>
+		</div>
+	</div>
+	<div class="tr_date">
+		<div class="td_res">
+		<%= h(object.upload_date)%>
+		</div>
+	</div>
+	<div class="tr_tags">
+		<div class="td_res">
+			<% if object.tags.length > 5 %>
+				<% object.tags.slice(0..5).each do |tag| %>
+					<span class="list_tag"><%= create_link(tag, 50, 11, @system.to_a)%></span>
+				<% end %>
+					<span class="list_tag">...</span>
+			<% else%>
+				<% object.tags.each do |tag| %>
+					<span class="list_tag"><%= create_link(tag, 50, 11, @systems.to_a)%></span>
+				<% end %>
+			<% end %>
+		</div>
+	</div>

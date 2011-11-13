@@ -1,0 +1,36 @@
+<div id="border_one">
+			<div id="border_two">
+					<div id="border_three">
+						<div id="border_four">
+<div id="tab_content">
+	<p class="search_field">
+		<% form_tag :controller => :search, :action => :search do%>
+			<%= text_field_tag :tags,  @tags.join(' ') , :size => 40 %>
+			<%= submit_tag "Search"%>
+			<% @available_systems.each do |type| %>
+				<%= check_box_tag(type, type, @media_to_search.include?(type.to_s) )%>
+				<%= type.to_s.capitalize.pluralize %>
+			<% end %>
+		<% end %>
+	</p>
+	<p class="searched_tags">
+		<b><span style="color:#333;"><%="searched tags"%>: </span></b>
+		<% for tag in @tags%>
+			<%=tag%>
+			<%= link_to image_tag('search/icon_remove.png', :size => "12x11"), 
+							  :action => controller.action_name, 
+							  :media_to_search => @media_to_search.join('+'),
+							  :tags => (@tags - (tag.to_a)).join("+")%>
+		<%end%>
+	</p>
+	
+	<p class="cloud">
+		<% if @response_list.tag_clouds['general'].tags.empty?%>
+			<%= "Sorry no results find for \"#{@tags.to_s}\""%>
+		<% else %>
+		<%= generate_tag_cloud_view(@response_list.tag_clouds['general'].tags, 30, @media_to_search)%>
+		<% end %>
+	</p>
+	
+</div>
+</div></div></div></div>
